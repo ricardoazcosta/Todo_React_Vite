@@ -12,8 +12,9 @@ const TodoForm = () => {
 
         // adicionar todo(tarefa)
         // Limpar os Campos
-        console.log(value, category);
-    }
+        setCategory("");
+        setValue("");
+    };
 
     return (
         <div className='todo-form'>
