@@ -12,7 +12,7 @@ const TodoForm = ({addTodo}) => {
 
         // adicionar todo(tarefa)
         // Limpar os Campos
-        addTodo(value,category);
+        addTodo(value, category);
         setCategory("");
         setValue("");
     };
