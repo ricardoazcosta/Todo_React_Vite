@@ -13,8 +13,8 @@ body {
   margin: 0 auto;
   padding: 20px 30px;
   border-radius: 10px;
-  border-bottom: #f4f4f4 3px solid;
-  border-top: #f4f4f4 3px solid;
+  background-color: #f4f4f48a;
+
 }
 
 h1{
@@ -38,19 +38,16 @@ button {
   background-color: #333974;
   color: #fff;
   padding: 5px 10px;
-  border: #fff 2px solid;
   border-radius: 5px;
   cursor: pointer;
   opacity: .8;
   transition: 0.3s;
+  border: none;
+  margin-right: 10px;
 }
 
 button:hover {
   opacity: 1;
-}
-
-.todo-form {
-  padding-bottom: 1.5rem;
 }
 
 input, select {
@@ -61,13 +58,38 @@ input, select {
   width: 100%;
 }
 
-.complete {
-  font-weight: 600;
-  color: #333974;
-  background-color: #5cd85c;
+.todo-form {
+  padding-bottom: 1.5rem;
 }
 
-.remove {
-  color: #333974;
-  background-color: #d9564f;
+.todo-list {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #5e17cf;
 }
+
+.todo {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.complete {
+  font-weight: 600;
+  color: #fff;
+  background-color: #0f9c0f;
+}
+.remove {
+  color: #fff;
+  background-color: #d1190f;
+}
+
+
+
+
+
