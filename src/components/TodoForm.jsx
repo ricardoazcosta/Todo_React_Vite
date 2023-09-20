@@ -21,7 +21,7 @@ const TodoForm = ({addTodo}) => {
         <div className='todo-form'>
             <h2>Criar Tarefa</h2>
             <form onSubmit={handleSubmit}>
-                <input type="text" placeholder="Digite o Titulo"
+                <input type="text" placeholder="Digite o Titulo" maxLength={100}
                 value={value}
                 onChange={(e) => setValue(e.target.value)} />
                 <select value={category} onChange={(e) => setCategory(e.target.value)}>

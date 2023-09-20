@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   padding: 30px;
@@ -17,9 +24,57 @@ body {
 
 }
 
+.filter,
+.search {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+}
+
+.filter-options div{
+  flex: 1 1 0;
+}
+
 h1{
   text-align: center;
 }
+
+.btn-filter-asc {
+ 
+  background-image: url(../img/sort.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  background-color: #fff;
+  border: #333974 2px solid;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+
+}
+
+.btn-filter-desc {
+
+  background-image: url(../img/sort1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  background-color: #fff;
+  border: #333974 2px solid;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+
+}
+
 
 h2 {
   margin-bottom: 10px;
@@ -44,6 +99,8 @@ button {
   transition: 0.3s;
   border: none;
   margin-right: 10px;
+  font-size: 15px;
+  padding: 10px;
 }
 
 button:hover {
@@ -79,12 +136,30 @@ input, select {
   align-items: center;
 }
 
+.content {
+  width: 100%;
+  word-break: break-all;
+}
+.btn-action {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  cursor: pointer;
+  opacity:.8;
+  transition: 0.3s;
+  border: none;
+  width: 100%;
+    
+
+}
+
 .complete {
   font-weight: 600;
   color: #fff;
   background-color: #0f9c0f;
 }
 .remove {
+  font-weight: 600;
   color: #fff;
   background-color: #d1190f;
 }
