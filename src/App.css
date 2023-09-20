@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #252727;
+  background-image: url('../img/plan.avif');
+  background-position: center;
+  background-size: cover;
+}
+
+.app{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  border-bottom: #f4f4f4 3px solid;
+  border-top: #f4f4f4 3px solid;
+}
+
+h1{
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+
+}
+
+p {
+  margin: 10px 0;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333974;
+  color: #fff;
+  padding: 5px 10px;
+  border: #fff 2px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: .8;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.complete {
+  font-weight: 600;
+  color: #333974;
+  background-color: #5cd85c;
+}
+
+.remove {
+  color: #333974;
+  background-color: #d9564f;
+}
