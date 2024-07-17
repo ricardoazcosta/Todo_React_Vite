@@ -7,21 +7,22 @@
 body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
   padding: 30px;
   color: #252727;
-  background-image: url('../img/plan.avif');
+  background-color: #444;
+
   background-position: center;
   background-size: cover;
 }
 
-.app{
+.app {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px 30px;
   border-radius: 10px;
-  background-color: #f4f4f48a;
-
+  background-color: #eee;
+  border: none;
+  box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.3);
 }
 
 .filter,
@@ -34,19 +35,17 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
-
 }
 
-.filter-options div{
+.filter-options div {
   flex: 1 1 0;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
 .btn-filter-asc {
- 
   background-image: url(../img/sort.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,11 +56,9 @@ h1{
   width: 40px;
   height: 40px;
   border-radius: 5px;
-
 }
 
 .btn-filter-desc {
-
   background-image: url(../img/sort1.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -72,13 +69,10 @@ h1{
   width: 40px;
   height: 40px;
   border-radius: 5px;
-
 }
-
 
 h2 {
   margin-bottom: 10px;
-
 }
 
 p {
@@ -95,7 +89,7 @@ button {
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  opacity: .8;
+  opacity: 0.8;
   transition: 0.3s;
   border: none;
   margin-right: 10px;
@@ -107,7 +101,8 @@ button:hover {
   opacity: 1;
 }
 
-input, select {
+input,
+select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
@@ -127,7 +122,7 @@ input, select {
 
 .todo {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -145,26 +140,21 @@ input, select {
   align-items: center;
   justify-content: right;
   cursor: pointer;
-  opacity:.8;
+  opacity: 0.8;
   transition: 0.3s;
   border: none;
   width: 100%;
-    
-
 }
 
 .complete {
   font-weight: 600;
+  font-size: 1.125rem;
   color: #fff;
-  background-color: #0f9c0f;
+  background-color: green;
 }
 .remove {
+  font-size: 1.125rem;
   font-weight: 600;
   color: #fff;
-  background-color: #d1190f;
+  background-color: red;
 }
-
-
-
-
-

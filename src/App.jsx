@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import "./App.css";
+
 
 import Todo from './components/Todo';
 import TodoForm from './components/TodoForm';
@@ -8,10 +9,15 @@ import Filter from './components/Filter';
 
 
 function App() {
-  const [todos, setTodos] = useState([
-
-  ]);
-
+  const [todos, setTodos] = useState(
+JSON.parse(localStorage.getItem('todos')) || []
+  );
+useEffect(()=>{
+  const saveTodosToLocaleStorage = () => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  };
+  saveTodosToLocaleStorage();
+},[todos])
 
   // --> Funcão para pequisar Tarefa
 const [search, setSearch] = useState ("");
@@ -37,6 +43,11 @@ const [sort, setSort] = useState  ("Asc");
 
     setTodos(newTodos);
   };
+
+//--> Locale Storage
+
+
+
 
   //--> Remover Todo(tarefas)
 
